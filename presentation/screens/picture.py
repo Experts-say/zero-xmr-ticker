@@ -11,7 +11,7 @@ SCREEN_WIDTH = 250
 FONT_SMALL = ImageFont.truetype(
     os.path.join(os.path.dirname(__file__), os.pardir, 'Roses.ttf'), 8)
 FONT_LARGE = ImageFont.truetype(
-    os.path.join(os.path.dirname(__file__), os.pardir, 'PixelSplitter-Bold.ttf'), 26)
+    os.path.join(os.path.dirname(__file__), os.pardir, 'MoneroGothic.ttf'), 26)
 
 class Picture(Observer):
 
