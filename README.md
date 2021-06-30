@@ -2,7 +2,7 @@
 
 Monero (and many other cryptocurrencies) price ticker for your RPi Zero
 
-![display](XMRTicker1.jpeg)
+![display](XMRTicker1.jpg)
 
 ## Hardware
 
