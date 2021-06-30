@@ -16,24 +16,43 @@ Monero (and many other cryptocurrencies) price ticker for your RPi Zero
 * inkyWhat (Red, Black, White - see https://www.adafruit.com/product/4143) 
 * Virtual (picture file output)
 
+## Preparation
+
+1. Download and Flash Raspbian Lite onto SD card (download from https://www.raspberrypi.org/software/operating-systems/)
+
+2. Boot RPi and connect RPi via LAN connection (RPi 3-4) or configure WIFI (Any RPi) by either:
+   1. Full sized RPi: Plugging SD into Raspberry Pi and configuring Wifi via `sudo raspi-config`
+   2. RPi Zero W: Reinsert the flashed SD card into your computer (not RPi) and create a new file called wpa_supplicant.conf with the following text, replacing “YOUR_NETWORK_NAME” and “YOUR_NETWORK_PASSWORD” with your information. A source code editor such as Atom works great for this purpose. WordPad and Notepad are not recommended to create this file as extra characters are added in the formatting process. 
+
+    country=us
+    update_config=1
+    ctrl_interface=/var/run/wpa_supplicant
+
+    network={
+    scan_ssid=1
+    ssid="YOUR_NETWORK_NAME"
+    psk="YOUR_NETWORK_PASSWORD"
+}
+
+
+3. Eject SD, insert into RPi Zero W and boot
+4. SSH into RPi
+
+
 ## Installation 
 
-1. Connect RPi via LAN connection (RPi 3-4) or configure WIFI (Any RPi)
-
-2. SSH into RPi
-
-3. Turn on SPI via `sudo raspi-config`
+1. Turn on SPI via `sudo raspi-config`
     ```
     Interfacing Options -> SPI
    ```
-4. Install dependencies
+2. Install dependencies
     ```
     sudo apt update
     sudo apt-get install python3-pip python3-pil python3-numpy
     pip3 install RPi.GPIO spidev
     ```
 
-5. Install drivers for your display
+3. Install drivers for your display
     1. Waveshare display
     ```
     git clone https://github.com/waveshare/e-Paper.git ~/e-Paper
@@ -44,11 +63,11 @@ Monero (and many other cryptocurrencies) price ticker for your RPi Zero
     ```
     pip3 install inky[rpi]
     ```
-6. Download Zero XMR Ticker
+4. Download Zero XMR Ticker
     ```
     git clone https://github.com/Experts-say/zero-xmr-ticker.git ~/zero-xmr-ticker
     ```
-7. Run it
+5. Run it
     ```
     python3 ~/zero-xmr-ticker/main.py
     ```
