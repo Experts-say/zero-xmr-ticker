@@ -20,7 +20,7 @@ SMALL_FONT_SIZE = 10
 FONT_SMALL = ImageFont.truetype(os.path.join(os.path.dirname(__file__), os.pardir, 'Roses.ttf'), SMALL_FONT_SIZE)
 
 LARGE_FONT_SIZE = 26
-FONT_LARGE = ImageFont.truetype(os.path.join(os.path.dirname(__file__), os.pardir, 'PixelSplitter-Bold.ttf'), LARGE_FONT_SIZE)
+FONT_LARGE = ImageFont.truetype(os.path.join(os.path.dirname(__file__), os.pardir, 'MoneroGothic.ttf'), LARGE_FONT_SIZE)
 
 class Inkywhatrbw(Observer):
 
