@@ -24,9 +24,9 @@ class Builder:
                 logger.info(f'{screen} initialized')
             except AttributeError as e:
                 logger.error(str(e))
-                raise BtcConfigError(
+                raise XMRConfigError(
                     f'Cannot instantiate {screen}')
 
 
-class BtcConfigError(Exception):
-    """Custom Zero BTC screen Exception"""
+class XMRConfigError(Exception):
+    """Custom Zero XMR Ticker Exception"""
