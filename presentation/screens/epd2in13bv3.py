@@ -14,7 +14,7 @@ SCREEN_WIDTH = 212
 FONT_SMALL = ImageFont.truetype(
     os.path.join(os.path.dirname(__file__), os.pardir, 'Roses.ttf'), 7)
 FONT_LARGE = ImageFont.truetype(
-    os.path.join(os.path.dirname(__file__), os.pardir, 'PixelSplitter-Bold.ttf'), 22)
+    os.path.join(os.path.dirname(__file__), os.pardir, 'MoneroGothic.ttf'), 22)
 
 class Epd2in13bv3(Observer):
 
