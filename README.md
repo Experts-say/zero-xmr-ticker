@@ -23,7 +23,7 @@ Monero (and many other cryptocurrencies) price ticker for your RPi Zero
 2. Boot RPi and connect RPi via LAN connection (RPi 3-4) or configure WIFI (Any RPi) by either:
    1. Full sized RPi: Plugging SD into Raspberry Pi and configuring Wifi via `sudo raspi-config`
    2. RPi Zero W: Reinsert the flashed SD card into your computer (not RPi) and create a new file called wpa_supplicant.conf with the following text, replacing “YOUR_NETWORK_NAME” and “YOUR_NETWORK_PASSWORD” with your information. A source code editor such as Atom works great for this purpose. WordPad and Notepad are not recommended to create this file as extra characters are added in the formatting process. 
-
+    ```
     country=us
     update_config=1
     ctrl_interface=/var/run/wpa_supplicant
@@ -34,6 +34,7 @@ Monero (and many other cryptocurrencies) price ticker for your RPi Zero
     psk="YOUR_NETWORK_PASSWORD"
 }
 
+    ```
 
 3. Eject SD, insert into RPi Zero W and boot
 4. SSH into RPi
