@@ -1,5 +1,5 @@
 # Zero XMR Ticker 
-##An easy XMR adaptation based on Dr Mods amazing zero-btc-screen
+## An easy XMR adaptation based on Dr Mods amazing zero-btc-screen
 
 Monero (and many other cryptocurrencies) price ticker for your RPi Zero
 
