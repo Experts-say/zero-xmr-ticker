@@ -30,11 +30,11 @@ class Plot:
         min_price = min(prices)
         middle_price = (max_price - min_price) / 2 + min_price
 
-        price = Plot.human_format(max_price, 5)
+        price = Plot.human_format(max_price, 4)
         draw.text((center_x(price), position_first[1]), price, font=font, fill=fill)
-        price = Plot.human_format(middle_price, 5)
+        price = Plot.human_format(middle_price, 4)
         draw.text((center_x(price), (position_last[1] - position_first[1]) / 2 + position_first[1]), price, font=font, fill=fill)
-        price = Plot.human_format(min_price, 5)
+        price = Plot.human_format(min_price, 4)
         draw.text((center_x(price), position_last[1]), price, font=font, fill=fill)
 
     @staticmethod
