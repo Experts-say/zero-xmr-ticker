@@ -114,6 +114,7 @@ mode : candle
 ### Autostart
 
 To make it run on startup edit the system's services daemon
+
     1. Create a new service configuration file
        ```
         sudo nano /etc/systemd/system/xmr-ticker.service
