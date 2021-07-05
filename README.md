@@ -113,19 +113,7 @@ mode : candle
 
 ### Autostart
 
-To make it run on startup you can choose from 2 options:
-
-1. Using the rc.local file
-    1. `sudo nano /etc/rc.local`
-    2. Add one the following before `exit 0`
-   ```
-   /usr/bin/python3 /home/pi/zero-xmr-ticker/main.py &
-   ```
-   conversely, you can run in `screen` you can install it with `sudo apt-get install screen`
-   ```
-   su - pi -c "/usr/bin/screen -dm sh -c '/usr/bin/python3 /home/pi/zero-xmr-ticker/main.py'"
-   ```
-2. Using the system's services daemon
+To make it run on startup edit the system's services daemon
     1. Create a new service configuration file
        ```
         sudo nano /etc/systemd/system/xmr-ticker.service
@@ -162,3 +150,6 @@ To make it run on startup you can choose from 2 options:
        ```
         sudo journalctl -f -u xmr-ticker.service
        ```
+
+Full credit to dr-mod and team. 
+Descriptions and 1% of code adjusted to XMR by Motherland Engineering
