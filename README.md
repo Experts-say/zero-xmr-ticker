@@ -22,14 +22,15 @@
 
 2. Download and Flash Raspbian Lite onto an SD card (download from https://www.raspberrypi.org/software/operating-systems/)
 
-3. If your RPi has a LAN connection (i.e. any RRi0 with LAN-Adapter or RPi 3/4) then 
-     1) Connect RPi via LAN connection and boot up 
-     2) Either connect a screen to the RPI or use another computer to SSH into the Pi
-     3) Configuring Wifi via `sudo raspi-config`
+3. (Optional) If your RPi has a LAN connection (i.e. any RRi0 with LAN-Adapter or RPi 3/4) then 
+    1) Connect RPi via LAN connection and boot it up 
+    2) Either connect a screen and keyboard to the RPI or use another computer to SSH into the Pi (default username & PW are "pi" and "raspberry")
+    3) Configure Wifi via `sudo raspi-config`
+    4) Skip step 4
 
-8. OR configure WIFI (Any RPi) by either:
-   
-   2. Without LAN (or Screen): Reinsert the flashed SD card into your computer (not RPi) and create a new file called wpa_supplicant.conf with the following text, replacing “YOUR_NETWORK_NAME” and “YOUR_NETWORK_PASSWORD” with your information. A source code editor such as Atom works great for this purpose. WordPad and Notepad are not recommended to create this file as extra characters are added in the formatting process. 
+4. Configure WIFI manually:
+    1) Reinsert the flashed SD card into your computer (not RPi)
+    2) In the main folder create a new file called wpa_supplicant.conf with the text below (replace “YOUR_NETWORK_NAME” and “YOUR_NETWORK_PASSWORD” with your wifi credentials). A plain text editor like Notepad++ is preferred as it uses the correct Unix style line-breaks that can be read by the RPi  
   
   ```
     country=us
