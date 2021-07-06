@@ -7,21 +7,28 @@
 
 ### Platform
 
-* Ideal: Raspberry Pi Zero WH (i.e. wireless with GPIO pins)
+* Ideal: Raspberry Pi Zero WH (i.e. with WIFI and GPIO pins)
 * With few extra steps RPi 0 / RPi 0W / RPi 3B+ / RPi 4 work just as well
 
 ### Screens
 
-* Waveshare eInk displays: epd2in13v2, epd2in13bv3 (see https://www.waveshare.com/wiki/2.13inch_e-Paper_HAT)
+* Waveshare 2.13" eInk displays (Black and White only): epd2in13v2, epd2in13bv3 (see https://www.waveshare.com/wiki/2.13inch_e-Paper_HAT)
 * inkyWhat (Red, Black, White - see https://www.adafruit.com/product/4143) 
 * Virtual (picture file output)
 
 ## Preparation
 
-1. Download and Flash Raspbian Lite onto SD card (download from https://www.raspberrypi.org/software/operating-systems/)
+1. If your RPi zero or zero W has no headers (GPIO pins), its time to solder them on now.
 
-2. Boot RPi and connect RPi via LAN connection (RPi 3-4) or configure WIFI (Any RPi) by either:
-   1. With LAN+SSH (or Screen): Configuring Wifi via `sudo raspi-config`
+2. Download and Flash Raspbian Lite onto an SD card (download from https://www.raspberrypi.org/software/operating-systems/)
+
+3A.If your RPi has a LAN connection (i.e. RRi0 with LAN Adapter or RPi 3/4) then 
+      1) Connect RPi via LAN connection and boot up 
+      2) Either connect a screen to the RPI or use another computer to SSH into the Pi
+      3)Configuring Wifi via `sudo raspi-config`
+
+8. OR configure WIFI (Any RPi) by either:
+   
    2. Without LAN (or Screen): Reinsert the flashed SD card into your computer (not RPi) and create a new file called wpa_supplicant.conf with the following text, replacing “YOUR_NETWORK_NAME” and “YOUR_NETWORK_PASSWORD” with your information. A source code editor such as Atom works great for this purpose. WordPad and Notepad are not recommended to create this file as extra characters are added in the formatting process. 
   
   ```
