@@ -22,10 +22,10 @@
 
 2. Download and Flash Raspbian Lite onto an SD card (download from https://www.raspberrypi.org/software/operating-systems/)
 
-3A.If your RPi has a LAN connection (i.e. RRi0 with LAN Adapter or RPi 3/4) then 
-      1) Connect RPi via LAN connection and boot up 
-      2) Either connect a screen to the RPI or use another computer to SSH into the Pi
-      3)Configuring Wifi via `sudo raspi-config`
+3. If your RPi has a LAN connection (i.e. any RRi0 with LAN-Adapter or RPi 3/4) then 
+     1) Connect RPi via LAN connection and boot up 
+     2) Either connect a screen to the RPI or use another computer to SSH into the Pi
+     3) Configuring Wifi via `sudo raspi-config`
 
 8. OR configure WIFI (Any RPi) by either:
    
