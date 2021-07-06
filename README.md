@@ -7,7 +7,8 @@
 
 ### Platform
 
-* Raspberry Pi Zero W (or any other RPi)
+* Ideal: Raspberry Pi Zero WH (i.e. wireless with GPIO pins)
+* With few extra steps RPi 0 / RPi 0W / RPi 3B+ / RPi 4 work just as well
 
 ### Screens
 
